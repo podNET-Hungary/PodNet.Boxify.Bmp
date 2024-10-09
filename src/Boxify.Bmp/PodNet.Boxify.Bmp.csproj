@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Description>An extension for PodNet.Boxify that wraps System.Drawing.Bitmap for drawing box-drawings of images to text, files or terminals</Description>
+		<PackageTags>box, block, art, unicode, ascii, graphics, art, terminal, console, bmp, bitmap, PodNet, awesome</PackageTags>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="PodNet.NuGet.Core" PrivateAssets="all" />
+		<PackageReference Include="PodNet.Boxify" />
+		<PackageReference Include="PolySharp" PrivateAssets="all" />
+		<PackageReference Include="System.Drawing.Common" />
+	</ItemGroup>
+</Project>
