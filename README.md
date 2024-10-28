@@ -17,7 +17,7 @@ There are no additional options for resizing, colorizing or applying effects. Do
 
 For details on how to use [`PodNet.Boxify`](https://github.com/podNET-Hungary/PodNet.Boxify/), see the repo at https://github.com/podNET-Hungary/PodNet.Boxify/.
 
-This package is also required by [`PodNet.Boxify.Svg`](https://github.com/podNET-Hungary/PodNet.Boxify.Svg/) that allows converting SVG vector-based images to bitmaps so that they can in turn be converted to box-drawings.
+This package is also required by v1.0.0 [`PodNet.Boxify.Svg`](https://github.com/podNET-Hungary/PodNet.Boxify.Svg/) that allows converting SVG vector-based images to bitmaps so that they can in turn be converted to box-drawings. v1.0.1 onwards this dependency was removed. You can still use this library (and v1.0.0 of the SVG companion) if it suits your needs, especially if you already use `System.Drawing.Common`. However, if you're using another library, like SkiaSharp, ImageSharp or any others, you should supply your own simple implementation for the `IBoxBitmapSource` (it should simply wrap an object an proxy the `Width`, `Height` and `GetPixel(int x, int y)` calls to it, see [BitmapSource.cs](./src/Boxify.Bmp/BitmapSource.cs) for reference).
 
 ## Contributing and Support
 
